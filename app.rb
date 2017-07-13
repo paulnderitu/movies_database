@@ -1,0 +1,6 @@
+require('sinatra')
+require('sinatra/reloader')
+require('./lib/movie')
+require('./lib/actor')
+also_reload('lib/**/*.rb')
+require("pg")
